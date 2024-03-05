@@ -1,0 +1,14 @@
+site:
+  title: "Kotlin Bank Web App"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/dist/js/developmentExecutable/kotlinbankwebapp.js"
+      api: "build/libs/kotlinbankwebapp.jar"
+    prod:
+      script: "build/dist/js/productionExecutable/kotlinbankwebapp.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
